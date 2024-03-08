@@ -26,10 +26,33 @@ const getAllMembers = asyncHandler(async (req, res) => {
   const roles = await Role.find({});
   const resultPromises = members.map(async (c) => await User.findById(c.user));
   const result = await Promise.all(resultPromises);
-  const userName = async(x) => await User.findById(x.user);
-  const roleName = async(x) => await Role.findById(x.role);
 
   const pages = Math.ceil(result.length / 10);
+
+  const data = await Promise.all(
+    members.map(async (x) => {
+      const userQueryResult = await User.findById(x.user)
+        .select("id name")
+        .lean();
+      const roleQueryResult = await Role.findById(x.role)
+        .select("id name")
+        .lean();
+
+      return {
+        id: x._id,
+        community: x.community,
+        user: {
+          id: x.user,
+          name: userQueryResult.name,
+        },
+        role: {
+          id: x.role,
+          name: roleQueryResult.name,
+        },
+      };
+    })
+  );
+
   res.json({
     status: true,
     content: {
@@ -38,20 +61,32 @@ const getAllMembers = asyncHandler(async (req, res) => {
         pages: pages,
         page: 1,
       },
-      data: members.map((x) => ({
-        id: x._id,
-        community: x.community,
-        user: {
-          id: x.user,
-          name: userName(x),
-        },
-        role: {
-          id: x.role,
-          name: roleName(x),
-        },
-      })),
+      data,
     },
   });
+
+  // res.json({
+  //   status: true,
+  //   content: {
+  //     meta: {
+  //       total: result.length,
+  //       pages: pages,
+  //       page: 1,
+  //     },
+  //     data: members.map((x) => ({
+  //       id: x._id,
+  //       community: x.community,
+  //       user: {
+  //         id: x.user,
+  //         name: User.findById(x.user),
+  //       },
+  //       role: {
+  //         id: x.role,
+  //         name: Role.findById(x.role),
+  //       },
+  //     })),
+  //   },
+  // });
 });
 
 const getMyCommunities = asyncHandler(async (req, res) => {
