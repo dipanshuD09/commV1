@@ -2,6 +2,7 @@ import Community from "../models/communityModel.js";
 import Member from "../models/memberModel.js";
 import asyncHandler from "../middleware/asyncHandler.js";
 import Role from "../models/roleModel.js";
+import User from "../models/userModel.js";
 
 const getCommunities = asyncHandler(async (req, res) => {
   const communities = await Community.find({}).sort({ createdAt: -1 });
@@ -22,16 +23,33 @@ const getCommunities = asyncHandler(async (req, res) => {
 const getAllMembers = asyncHandler(async (req, res) => {
   const community = await Community.findOne({ slug: req.params.id });
   const members = await Member.find({ community: community._id });
-  const pages = Math.ceil(members.length / 10);
+  const roles = await Role.find({});
+  const resultPromises = members.map(async (c) => await User.findById(c.user));
+  const result = await Promise.all(resultPromises);
+  const userName = async(x) => await User.findById(x.user);
+  const roleName = async(x) => await Role.findById(x.role);
+
+  const pages = Math.ceil(result.length / 10);
   res.json({
     status: true,
     content: {
       meta: {
-        total: members.length,
+        total: result.length,
         pages: pages,
         page: 1,
       },
-      data: members,
+      data: members.map((x) => ({
+        id: x._id,
+        community: x.community,
+        user: {
+          id: x.user,
+          name: userName(x),
+        },
+        role: {
+          id: x.role,
+          name: roleName(x),
+        },
+      })),
     },
   });
 });
@@ -82,9 +100,7 @@ const createCommunity = asyncHandler(async (req, res) => {
     }
   } else {
     res.status(401);
-    throw new Error(
-      "Community with provided name already in existence"
-    );
+    throw new Error("Community with provided name already in existence");
   }
 });
 
