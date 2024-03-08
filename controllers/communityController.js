@@ -23,7 +23,6 @@ const getCommunities = asyncHandler(async (req, res) => {
 const getAllMembers = asyncHandler(async (req, res) => {
   const community = await Community.findOne({ slug: req.params.id });
   const members = await Member.find({ community: community._id });
-  const roles = await Role.find({});
   const resultPromises = members.map(async (c) => await User.findById(c.user));
   const result = await Promise.all(resultPromises);
 
