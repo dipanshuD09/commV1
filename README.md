@@ -29,6 +29,8 @@ https://github.com/dipanshuD09/commV1/assets/139952488/a4c9454c-83dd-4726-bcb8-0
 >{{baseURL}}/v1/auth/signup
 >```
 
+### Body
+
 | key    | value |
 | -------- | ------- |
 | name  | Dipanshu    |
@@ -42,6 +44,8 @@ https://github.com/dipanshuD09/commV1/assets/139952488/a4c9454c-83dd-4726-bcb8-0
 >```
 >{{baseURL}}/v1/auth/signin
 >```
+
+### Body
 
 | key    | value |
 | -------- | ------- |
@@ -74,6 +78,8 @@ https://github.com/dipanshuD09/commV1/assets/139952488/a4c9454c-83dd-4726-bcb8-0
 >{{baseURL}}/v1/community/
 >```
 
+### Body
+
 | key    | value |
 | -------- | ------- |
 | name  | CommunityName    |
@@ -95,6 +101,8 @@ https://github.com/dipanshuD09/commV1/assets/139952488/a4c9454c-83dd-4726-bcb8-0
 >```
 
 The community slug is passed on to params as :id in the URL.
+
+### Params
 
 | key    | value |
 | -------- | ------- |
@@ -126,6 +134,8 @@ The community slug is passed on to params as :id in the URL.
 >{{baseURL}}/v1/role/
 >```
 
+### Body
+
 | key    | value |
 | -------- | ------- |
 | name  | Role Name    |
@@ -147,6 +157,8 @@ The community slug is passed on to params as :id in the URL.
 >```
 >{{baseURL}}/v1/member/
 >```
+
+### Body
 
 | key    | value |
 | -------- | ------- |
@@ -176,4 +188,4 @@ The community slug is passed on to params as :id in the URL.
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 _________________________________________________
-Powered By: [postman-to-markdown](https://github.com/bautistaj/postman-to-markdown/)
+
