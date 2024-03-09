@@ -23,7 +23,7 @@ https://github.com/dipanshuD09/commV1/assets/139952488/a4c9454c-83dd-4726-bcb8-0
 # 📁 Collection: auth 
 
 
-## End-point: register
+## 1. End-point: register
 ### Method: POST
 >```
 >{{baseURL}}/v1/auth/signup
@@ -39,7 +39,7 @@ https://github.com/dipanshuD09/commV1/assets/139952488/a4c9454c-83dd-4726-bcb8-0
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: Login
+## 2. End-point: Login
 ### Method: POST
 >```
 >{{baseURL}}/v1/auth/signin
@@ -54,7 +54,7 @@ https://github.com/dipanshuD09/commV1/assets/139952488/a4c9454c-83dd-4726-bcb8-0
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: logout
+## 3. End-point: logout
 ### Method: POST
 >```
 >{{baseURL}}/v1/auth/signout
@@ -62,7 +62,7 @@ https://github.com/dipanshuD09/commV1/assets/139952488/a4c9454c-83dd-4726-bcb8-0
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: Get me
+## 4. End-point: Get me
 ### Method: GET
 >```
 >{{baseURL}}/v1/auth/me
@@ -72,7 +72,7 @@ https://github.com/dipanshuD09/commV1/assets/139952488/a4c9454c-83dd-4726-bcb8-0
 # 📁 Collection: Community 
 
 
-## End-point: create community
+## 1. End-point: create community
 ### Method: POST
 >```
 >{{baseURL}}/v1/community/
@@ -86,7 +86,7 @@ https://github.com/dipanshuD09/commV1/assets/139952488/a4c9454c-83dd-4726-bcb8-0
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: get all communities
+## 2. End-point: get all communities
 ### Method: GET
 >```
 >{{baseURL}}/v1/community/
@@ -94,7 +94,7 @@ https://github.com/dipanshuD09/commV1/assets/139952488/a4c9454c-83dd-4726-bcb8-0
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: get all members of community
+## 3. End-point: get all members of community
 ### Method: GET
 >```
 >{{baseURL}}/v1/community/:id/members
@@ -110,7 +110,7 @@ The community slug is passed on to params as :id in the URL.
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: get owned communities
+## 4. End-point: get owned communities
 ### Method: GET
 >```
 >{{baseURL}}/v1/community/me/owner
@@ -118,7 +118,7 @@ The community slug is passed on to params as :id in the URL.
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: get joined communities
+## 5. End-point: get joined communities
 ### Method: GET
 >```
 >{{baseURL}}/v1/community/me/member
@@ -128,7 +128,7 @@ The community slug is passed on to params as :id in the URL.
 # 📁 Collection: Roles 
 
 
-## End-point: create role
+## 1. End-point: create role
 ### Method: POST
 >```
 >{{baseURL}}/v1/role/
@@ -142,7 +142,7 @@ The community slug is passed on to params as :id in the URL.
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: get all roles
+## 2. End-point: get all roles
 ### Method: GET
 >```
 >{{baseURL}}/v1/role/
@@ -152,7 +152,7 @@ The community slug is passed on to params as :id in the URL.
 # 📁 Collection: Members 
 
 
-## End-point: add member to community
+## 1. End-point: add member to community
 ### Method: POST
 >```
 >{{baseURL}}/v1/member/
@@ -168,7 +168,7 @@ The community slug is passed on to params as :id in the URL.
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: remove member from community
+## 2. End-point: remove member from community
 ### Method: DELETE
 >```
 >{{baseURL}}/v1/member/:id
