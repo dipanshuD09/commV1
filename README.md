@@ -31,7 +31,7 @@ https://github.com/dipanshuD09/commV1/assets/139952488/a4c9454c-83dd-4726-bcb8-0
 
 | key    | value |
 | -------- | ------- |
-| name  | dipanshu    |
+| name  | Dipanshu    |
 | email | dipanshud146@gmail.com     |
 | password    | StrongPass@123    |
 
@@ -42,6 +42,11 @@ https://github.com/dipanshuD09/commV1/assets/139952488/a4c9454c-83dd-4726-bcb8-0
 >```
 >{{baseURL}}/v1/auth/signin
 >```
+
+| key    | value |
+| -------- | ------- |
+| email | dipanshud146@gmail.com     |
+| password    | StrongPass@123    |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -69,6 +74,10 @@ https://github.com/dipanshuD09/commV1/assets/139952488/a4c9454c-83dd-4726-bcb8-0
 >{{baseURL}}/v1/community/
 >```
 
+| key    | value |
+| -------- | ------- |
+| name  | CommunityName    |
+
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
 ## End-point: get all communities
@@ -84,6 +93,12 @@ https://github.com/dipanshuD09/commV1/assets/139952488/a4c9454c-83dd-4726-bcb8-0
 >```
 >{{baseURL}}/v1/community/:id/members
 >```
+
+The community slug is passed on to params as :id in the URL.
+
+| key    | value |
+| -------- | ------- |
+| id  | communityname    |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -111,6 +126,10 @@ https://github.com/dipanshuD09/commV1/assets/139952488/a4c9454c-83dd-4726-bcb8-0
 >{{baseURL}}/v1/role/
 >```
 
+| key    | value |
+| -------- | ------- |
+| name  | Role Name    |
+
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
 ## End-point: get all roles
@@ -129,6 +148,12 @@ https://github.com/dipanshuD09/commV1/assets/139952488/a4c9454c-83dd-4726-bcb8-0
 >{{baseURL}}/v1/member/
 >```
 
+| key    | value |
+| -------- | ------- |
+| community  | 68609870989090    |
+| user | 8789768978978788     |
+| role    | 689687807788090    |
+
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
 ## End-point: remove member from community
@@ -136,6 +161,18 @@ https://github.com/dipanshuD09/commV1/assets/139952488/a4c9454c-83dd-4726-bcb8-0
 >```
 >{{baseURL}}/v1/member/:id
 >```
+### Params
+
+| key    | value |
+| -------- | ------- |
+| id  | 8786786787807808    |
+
+### Body
+
+| key    | value |
+| -------- | ------- |
+| community  | 7689689680686897    |
+
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 _________________________________________________
