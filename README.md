@@ -1,4 +1,8 @@
 # Project: commV1
+
+Deployment Link: http://commv1-env-1.eba-z232j3aq.ap-south-1.elasticbeanstalk.com/
+(You can use this url as baseURL and test this API on Postman.)
+
 ## Demo
 
 
