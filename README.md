@@ -7,11 +7,9 @@ Deployment Link: http://commv1-env-1.eba-z232j3aq.ap-south-1.elasticbeanstalk.co
 ## Demo
 
 
+https://github.com/dipanshuD09/commV1/assets/139952488/a4c9454c-83dd-4726-bcb8-0486c056f9b0
 
-https://github.com/dipanshuD09/commV1/assets/139952488/c7e8efb7-8ff3-49f4-9282-536fdbdfb3ca
 
-
-https://github.com/dipanshuD09/commV1/assets/139952488/39b3effa-04e1-4b61-b6be-1a6d14bdd398
 
 ## Description
 
