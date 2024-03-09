@@ -18,7 +18,7 @@ https://github.com/dipanshuD09/commV1/assets/139952488/a4c9454c-83dd-4726-bcb8-0
 
 
 1. Utilized cookies to store JWT.
-2. TechStack - MongoDB Atlas for storage. (If you want to test the api, you can find the mongoDB URI in .env file.), Node, @theinternetfolks/snowflake for ID generation, validator.js.
+2. TechStack - MongoDB Atlas for storage. (If you want to test the api, you can find the mongoDB URI in .env file.), Node, @theinternetfolks/snowflake for ID generation, Mongoose ODM, validator.js.
 
 # 📁 Collection: auth 
 
